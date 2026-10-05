@@ -16,7 +16,7 @@
 :root{--navy:#082F49;--blue:#0B5A8A;--cyan:#22C3E6;--ice:#EAF7FC;--ink:#0F2230;--mute:#51657A;--line:#D5E4EC;--warn:#F59E0B;--r:14px}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{font:400 17px/1.6 "Public Sans",system-ui,sans-serif;color:var(--ink);background:#fff;padding-bottom:72px}
+body{font:400 17px/1.6 "Public Sans",system-ui,sans-serif;color:var(--ink);background:#fff;}
 h1,h2,h3{font-family:Archivo,system-ui,sans-serif;line-height:1.1;letter-spacing:-.01em}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
@@ -91,15 +91,11 @@ label.f{font-weight:700;font-size:14px;display:block;margin-bottom:4px}
 footer{background:#051D2E;color:#9FB6C6;padding:48px 0 24px;font-size:15px}
 footer .wrap{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 footer h4{color:#fff;margin-bottom:8px;font-family:Archivo}footer a{display:block;text-decoration:none;margin:4px 0}footer .cp{grid-column:1/-1;border-top:1px solid #12384F;padding-top:18px;font-size:13px}
-.bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(8,47,73,.15);padding:8px 8px calc(8px + env(safe-area-inset-bottom));gap:8px}
-.bar a{flex:1;text-align:center;text-decoration:none;font:700 14px Archivo;padding:11px 4px;border-radius:12px;background:var(--ice);color:var(--navy)}
-.bar a.w{background:#25D366;color:#06260f}.bar a.q{background:var(--cyan)}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
 @media(max-width:860px){
 .hero .wrap,.contact{grid-template-columns:1fr}.hero figure{aspect-ratio:16/10}.trust ul{grid-template-columns:1fr 1fr}
 .burger{display:block}nav ul{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:16px 20px;gap:14px;box-shadow:0 12px 20px rgba(8,47,73,.12)}
-nav ul.open{display:flex}.bar{display:flex}section{padding:56px 0}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+nav ul.open{display:flex}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -218,8 +214,6 @@ nav ul.open{display:flex}.bar{display:flex}section{padding:56px 0}}
 <div><h4>Zona</h4><span>Bergamo, Seriate, Stezzano, Dalmine, Treviglio, Alzano Lombardo</span></div>
 <div class="cp"><a href="#" style="display:inline;margin-right:16px">Privacy Policy</a><a href="#" style="display:inline">Cookie Policy</a><p style="margin-top:10px">© <span id="yr"></span> ProntoCasa Idraulica · P.IVA 00000000000 (demo)</p></div>
 </div></footer>
-
-<div class="bar" role="navigation" aria-label="Azioni rapide"><a data-tel href="#">📞 CHIAMA</a><a class="w" data-wa href="#">💬 WHATSAPP</a><a class="q" href="#preventivo">💰 PREVENTIVO</a></div>
 
 <script>
 /* ===== 1. CONFIGURAZIONE ATTIVITÀ ===== */
